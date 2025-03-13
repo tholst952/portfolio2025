@@ -56,7 +56,7 @@ nav a {
   margin-left: 4rem;
   font-weight: 500;
   transition: 0.3s ease;
-  border-bottom: 3px solid transparent;
+  /* border-bottom: 3px solid transparent; */
 }
 
 nav a:hover,
@@ -74,37 +74,53 @@ header button {
   border-radius: 50%;
   transition: 0.3s ease;
   color: #b74b4b;
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
 }
 
 @media (max-width: 995px) {
   nav {
     position: absolute;
-    /* display: none; */
+    display: none;
+    text-align: center;
     top: 0;
     right: 0;
-    width: 40%;
-    border-left: 3px solid #b74b4b;
+    /* width: 40%; */
+    width: 100%;
+    /* border-left: 3px solid #b74b4b; */
     border-bottom: 3px solid #b74b4b;
-    border-bottom-left-radius: 2rem;
-    padding: 1rem solid;
+    /* border-bottom-left-radius: 2rem; */
+    padding: 2rem 0;
     background-color: #161616;
     border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+    /* z-index: 99; */
   }
+
   nav.active {
     display: block;
   }
 
   nav a {
     display: block;
-    font-size: 2rem;
+    /* font-size: 2rem; */
+    font-size: 2.4rem;
     margin: 3rem 0;
+    padding: 1rem;
   }
 
   nav a:hover,
   nav a:active {
-    padding: 1rem;
-    border-radius: 0.5rem;
-    border-bottom: 0.5rem solid #b74b4b;
+    /* border-radius: 0.5rem; */
+    border-bottom: none;
+    transition: none;
+    background-color: none;
+  }
+
+  .nav-btn {
+    display: block;
   }
 }
 
@@ -317,15 +333,32 @@ span {
   display: block;
 }
 
-/* Skills section */
-.skills {
+/* section bg color #161616 */
+.projects,
+.education {
   background-color: #161616;
 }
 
-.toolbox {
+.project-container {
   width: 80%;
   height: 600px;
   margin: 6rem auto;
   background-color: #b74b4b;
+  border-radius: 5px;
+}
+
+.skills-container {
+  width: 80%;
+  height: 600px;
+  margin: 6rem auto;
+  background-color: #4ba1b7;
+  border-radius: 5px;
+}
+
+.education-container {
+  width: 80%;
+  height: 600px;
+  margin: 6rem auto;
+  background-color: #73b74b;
   border-radius: 5px;
 }
