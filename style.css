@@ -65,6 +65,10 @@ nav a:active {
   border-bottom: 3px solid #b74b4b;
 }
 
+nav a span {
+  font-size: 2.1rem;
+}
+
 header button {
   width: 4rem;
   height: 4rem;
@@ -121,6 +125,10 @@ header button {
 
   .nav-btn {
     display: block;
+  }
+
+  .project-container .project {
+    flex-direction: column;
   }
 }
 
@@ -271,22 +279,18 @@ span {
 
 @keyframes words {
   0%,
-  20% {
+  25% {
     content: "web developer";
   }
-  21%,
-  40% {
+  26%,
+  50% {
     content: "code explorer";
   }
-  41%,
-  60% {
-    content: "web designer";
-  }
-  61%,
-  80% {
+  51%,
+  75% {
     content: "javascript coder";
   }
-  81%,
+  76%,
   100% {
     content: "perpetual student";
   }
@@ -333,93 +337,113 @@ span {
   display: block;
 }
 
-/* section bg color #161616 */
-.projects,
-.education {
-  background-color: #161616;
-}
-
-.projects,
-.skills,
-.education {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 /* ****************** */
 /* PROJECTS SECTION */
 .projects {
+  background-color: #161616;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-bottom: 3px solid #b74b4b;
 }
 
 .project-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  justify-items: center;
-  align-items: center;
+  display: flex;
+  flex-direction: column;
   width: 100%;
-  height: 600px;
   margin: 3rem auto;
+}
 
+.project {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  margin-bottom: 3rem;
+}
+
+.project img {
+  width: 40rem;
+  cursor: pointer;
+}
+
+/* testing hover effect */
+.project img:hover {
+  transform: scale(1.1);
+  transition: 0.3s ease;
+}
+
+.project h2 {
+  font-size: 1.8rem;
+  color: #b74b4b;
+}
+
+.project p {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.project button {
+  cursor: pointer;
+  /* border-radius: 10%; */
+  font-size: 1.6rem;
+  padding: 0.8rem 3.4rem;
+  margin-right: 1rem;
+  background-color: transparent;
+  color: #b74b4b;
+  border: 1px solid #b74b4b;
+}
+
+.project button:active,
+.project button:hover {
   background-color: #b74b4b;
-  border-radius: 5px;
-}
-
-.project-container img {
-  width: 28rem;
-}
-
-@media (max-width: 1183px) {
-  .project-container {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media (max-width: 760px) {
-  .project-container {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-  }
+  color: black;
+  border: 1px solid black;
 }
 
 /* ****************** */
-/* SKILLS SECTION */
-.skills {
-  border-bottom: 3px solid #4ba1b7;
+/* SKILLS/EDUCATION SECTION */
+.skills-education {
+  /* display: grid;
+  grid-template-columns: 20% 80%; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  border-bottom: 3px solid #b74b4b;
+  font-size: 2.6rem;
+  /* margin: 8rem auto; */
+  line-height: 2;
 }
 
-.skills-container {
-  width: 100%;
-  height: 600px;
-  margin: 6rem auto;
-  background-color: #4ba1b7;
-  border-radius: 5px;
+.skills-container h2 {
+  font-size: 3rem;
+  color: #b74b4b;
+  text-align: center;
 }
 
 .skills-container ul {
+  display: flex;
+  gap: 4rem;
   list-style-type: none;
-  font-size: 2.8rem;
-  text-align: center;
-  margin-top: 13.6%;
+  padding: 1rem;
+  color: #4ba1b7;
   line-height: 2.5;
 }
 
-/* ****************** */
-/* EDUCATION SECTION */
-.education {
-  border-bottom: 3px solid #73b74b;
+.education-container h2 {
+  color: #73b74b;
 }
 
 .education-container {
-  width: 100%;
-  height: 600px;
-  margin: 6rem auto;
-  background-color: #73b74b;
-  border-radius: 5px;
+  font-size: 1.8rem;
 }
 
+.education-text {
+  margin-bottom: 4rem;
+}
+
+/* ****************** */
+/* FOOTER SECTION */
 footer {
   background-color: black;
   color: #fff;
