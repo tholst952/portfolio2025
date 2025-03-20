@@ -327,8 +327,6 @@ span {
 }
 
 .home-img img {
-  /* width: 70vw; */
-  /* width: 70vh; */
   margin-top: 4rem;
   width: 100%;
   height: auto;
@@ -357,7 +355,7 @@ span {
 .project {
   display: flex;
   justify-content: center;
-  gap: 5rem;
+  gap: 5.5rem;
   margin-bottom: 3rem;
 }
 
@@ -373,7 +371,7 @@ span {
 }
 
 .project h2 {
-  font-size: 1.8rem;
+  font-size: 2rem;
   color: #b74b4b;
 }
 
@@ -384,10 +382,11 @@ span {
 
 .project button {
   cursor: pointer;
-  /* border-radius: 10%; */
   font-size: 1.6rem;
-  padding: 0.8rem 3.4rem;
-  margin-right: 1rem;
+  font-weight: 600;
+  padding: 1rem 2.8rem;
+  margin-right: 1.4rem;
+  border-radius: 54rem;
   background-color: transparent;
   color: #b74b4b;
   border: 1px solid #b74b4b;
@@ -403,16 +402,17 @@ span {
 /* ****************** */
 /* SKILLS/EDUCATION SECTION */
 .skills-education {
-  /* display: grid;
-  grid-template-columns: 20% 80%; */
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 3rem;
   border-bottom: 3px solid #b74b4b;
   font-size: 2.6rem;
-  /* margin: 8rem auto; */
   line-height: 2;
+}
+
+.skills-container {
+  margin-bottom: 4rem;
 }
 
 .skills-container h2 {
