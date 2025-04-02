@@ -26,3 +26,11 @@ navLinks.forEach((link) => {
     navMenu.classList.remove("active");
   });
 });
+
+//Frowny face when mouse leaves the browser window
+window.addEventListener("mouseout", function (e) {
+  if (!e.relatedTarget) {
+    img.src = "/img/avatar-14.png";
+    console.log("The mouse has left the broswer window");
+  }
+});
