@@ -9,6 +9,7 @@ const navLinks = document.querySelectorAll(".nav-link");
 //Image hover effect
 btn.addEventListener("mouseenter", function () {
   img.src = "/img/avatar-12.png";
+  // img.src = "/img/avatar-13.png";
 });
 
 btn.addEventListener("mouseleave", function () {
