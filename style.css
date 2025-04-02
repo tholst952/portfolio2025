@@ -257,6 +257,7 @@ span {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-top: 3px solid #b74b4b;
   border-bottom: 3px solid #b74b4b;
 }
 
@@ -346,6 +347,7 @@ span {
   gap: 4rem;
   list-style-type: none;
   color: #4ba1b7;
+  transition: 2s ease;
 }
 
 .education-container h2 {
@@ -452,6 +454,7 @@ footer {
 
   .project-container .project {
     flex-direction: column;
+    align-items: center;
   }
 
   .skills-container h2 {
@@ -464,5 +467,6 @@ footer {
     color: #4ba1b7;
     line-height: 0.5;
     gap: 1.6rem;
+    transition: 2s ease;
   }
 }
