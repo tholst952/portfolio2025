@@ -369,8 +369,17 @@ footer {
   background-color: black;
   color: #fff;
   padding: 4rem;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   text-align: center;
+}
+
+.contact button {
+  cursor: pointer;
+  font-size: 1.6rem;
+  padding: 0.4rem 1.2rem;
+  border-radius: 8px;
+  background-color: gold;
+  margin-left: 1rem;
 }
 
 /* ****************** */

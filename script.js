@@ -5,6 +5,7 @@ const img = document.querySelector("img");
 const navBtn = document.querySelector(".nav-btn");
 const navMenu = document.querySelector("nav");
 const navLinks = document.querySelectorAll(".nav-link");
+const emailBtn = document.querySelectorAll(".email-btn");
 
 //Image hover effect
 btn.addEventListener("mouseenter", function () {
@@ -33,4 +34,19 @@ window.addEventListener("mouseout", function (e) {
     img.src = "/img/avatar-14.png";
     console.log("The mouse has left the broswer window");
   }
+});
+
+//Copy email to user's clipboard function
+// const copyToClipboard = function () {
+//   const copyText = "trena.holsten@gmail.com";
+
+//   // navigator.clipboard.writeText(copyText.value);
+//   alert("Copied email to clipboard!");
+// };
+
+emailBtn.addEventListener("click", () => {
+  const copyText = "trena.holsten@gmail.com";
+  navigator.clipboard
+    .writeText(copyText)
+    .then(() => alert("Copied email to clipboard!"));
 });
