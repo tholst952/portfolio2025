@@ -36,6 +36,17 @@ window.addEventListener("mouseout", function (e) {
   }
 });
 
+//Avatar changes when nav link is hovered
+navLinks.forEach(function (link) {
+  link.addEventListener("mouseover", function () {
+    img.src = "/img/avatar-15.png";
+  });
+
+  link.addEventListener("mouseout", function () {
+    img.src = "/img/avatar-11.png";
+  });
+});
+
 //Copy email to user's clipboard function
 // const copyToClipboard = function () {
 //   const copyText = "trena.holsten@gmail.com";
