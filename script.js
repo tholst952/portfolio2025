@@ -5,7 +5,7 @@ const topImg = document.querySelector(".home-img img");
 const navBtn = document.querySelector(".nav-btn");
 const navMenu = document.querySelector("nav");
 const navLinks = document.querySelectorAll(".nav-link");
-const emailBtn = document.querySelectorAll(".email-btn");
+const emailSpan = document.querySelectorAll(".email-span");
 const contactImgParent = document.querySelector(".contact-form-img");
 const contactImg = contactImgParent.querySelector("img");
 const contactForm = document.querySelector(".contact-form-inputs");
@@ -59,8 +59,8 @@ navLinks.forEach(function (link) {
 //   alert("Copied email to clipboard!");
 // };
 
-//change this to link with the email span inside contact text so it copies when clicked
-// emailBtn.addEventListener("click", () => {
+// copies email to user's clipboard
+// emailSpan.addEventListener("click", () => {
 //   const copyText = "trena.holsten@gmail.com";
 //   navigator.clipboard
 //     .writeText(copyText)

@@ -401,12 +401,13 @@ span {
 
 .contact-text {
   font-size: 2rem;
+  margin-top: 2rem;
   margin-bottom: 2.2rem;
 }
 
 .email-span {
-  background-color: #161616;
-  color: #fff;
+  background-color: #f7cc20;
+  color: #161616;
   font-size: 2.4rem;
   font-weight: 600;
   padding: 0 0.5rem;
@@ -414,7 +415,6 @@ span {
 
 .email-span:hover {
   cursor: pointer;
-  color: #f7cc20;
 }
 
 .contact-form-inputs {
@@ -443,6 +443,16 @@ span {
 .message-textarea {
   resize: none;
   height: 30%;
+}
+
+.contact-form-inputs button {
+  padding: 0.75rem 2rem;
+  font-size: 1.4rem;
+  border-radius: 6px;
+  /* width: 80%; */
+  border: none;
+  cursor: pointer;
+  background-color: #fafafa;
 }
 
 .contact-form-img img {
@@ -548,5 +558,11 @@ span {
     line-height: 0.5;
     gap: 1.6rem;
     transition: 2s ease;
+  }
+
+  .contact-form {
+    flex-direction: column;
+    width: 500px;
+    height: 1000px;
   }
 }
