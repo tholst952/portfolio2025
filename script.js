@@ -1,20 +1,24 @@
 "use strict";
 
 const btn = document.querySelector(".btn");
-const img = document.querySelector("img");
+const topImg = document.querySelector(".home-img img");
 const navBtn = document.querySelector(".nav-btn");
 const navMenu = document.querySelector("nav");
 const navLinks = document.querySelectorAll(".nav-link");
 const emailBtn = document.querySelectorAll(".email-btn");
+const contactImgParent = document.querySelector(".contact-form-img");
+const contactImg = contactImgParent.querySelector("img");
+const contactForm = document.querySelector(".contact-form-inputs");
 
 //Image hover effect
 btn.addEventListener("mouseenter", function () {
-  img.src = "/img/avatar-12.png";
+  topImg.src = "/img/avatar-12.png";
+  // img.src = "/img/avatar-red.png";
   // img.src = "/img/avatar-13.png";
 });
 
 btn.addEventListener("mouseleave", function () {
-  img.src = "/img/avatar-11.png";
+  topImg.src = "/img/avatar-11.png";
 });
 
 navBtn.addEventListener("click", function () {
@@ -31,7 +35,7 @@ navLinks.forEach((link) => {
 //Frowny face when mouse leaves the browser window
 window.addEventListener("mouseout", function (e) {
   if (!e.relatedTarget) {
-    img.src = "/img/avatar-14.png";
+    topImg.src = "/img/avatar-14.png";
     console.log("The mouse has left the broswer window");
   }
 });
@@ -39,11 +43,11 @@ window.addEventListener("mouseout", function (e) {
 //Avatar changes when nav link is hovered
 navLinks.forEach(function (link) {
   link.addEventListener("mouseover", function () {
-    img.src = "/img/avatar-15.png";
+    topImg.src = "/img/avatar-15.png";
   });
 
   link.addEventListener("mouseout", function () {
-    img.src = "/img/avatar-11.png";
+    topImg.src = "/img/avatar-11.png";
   });
 });
 
@@ -55,9 +59,28 @@ navLinks.forEach(function (link) {
 //   alert("Copied email to clipboard!");
 // };
 
-emailBtn.addEventListener("click", () => {
-  const copyText = "trena.holsten@gmail.com";
-  navigator.clipboard
-    .writeText(copyText)
-    .then(() => alert("Copied email to clipboard!"));
+//change this to link with the email span inside contact text so it copies when clicked
+// emailBtn.addEventListener("click", () => {
+//   const copyText = "trena.holsten@gmail.com";
+//   navigator.clipboard
+//     .writeText(copyText)
+//     .then(() => alert("Copied email to clipboard!"));
+// });
+
+// Change Image when mouse hovers over it
+contactImgParent.addEventListener("mouseover", function () {
+  contactImg.src = "/img/avatar-red-closed-shy.png";
+});
+
+contactImgParent.addEventListener("mouseleave", function () {
+  contactImg.src = "/img/avatar-red-shy-smile.png";
+});
+
+// Change the image when mouse hovers inside the contact form
+contactForm.addEventListener("mouseenter", function () {
+  contactImg.src = "/img/avatar-red-eyes-left-shy.png";
+});
+
+contactForm.addEventListener("mouseleave", function () {
+  contactImg.src = "/img/avatar-red-shy-smile.png";
 });

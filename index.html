@@ -15,6 +15,7 @@
     />
     <link rel="stylesheet" href="style.css" />
     <title>Portfolio Website</title>
+    <!-- <base target="_blank" rel="noopener noreferrer" /> -->
   </head>
   <body>
     <header>
@@ -49,7 +50,7 @@
           websites and applications for desktop and mobile.
         </p>
         <div class="contact-links">
-          <a href="#" class="btn email-btn">Contact me</a>
+          <a href="#contact" class="btn email-btn">Contact me</a>
           <div class="social-links">
             <a
               class="social-icon"
@@ -77,7 +78,7 @@
               cupiditate voluptatibus deleniti facere numquam, velit magnam
               consequatur.
             </p>
-            <a href="#">Live</a>
+            <a href="https://stardewvalleygiftguide.netlify.app/">Live</a>
             <a href="#">Code</a>
           </div>
         </div>
@@ -147,7 +148,9 @@
               minima porro, dolorem illo veniam laudantium ex, excepturi,
               expedita earum quos nulla officiis architecto possimus ea?
             </p>
-            <a href="#">Live</a>
+            <a href="https://omnifood-trena.netlify.app/" target="_blank"
+              >Live</a
+            >
             <a href="#">Code</a>
           </div>
         </div>
@@ -169,6 +172,10 @@
           </li>
           <li>
             <i class="fa-brands fa-react" style="color: #74c0fc"></i> React
+          </li>
+          <li><i class="fa-brands fa-git" style="color: #fff"></i> Git</li>
+          <li>
+            <i class="fa-brands fa-github" style="color: #63e6b3"></i> Github
           </li>
         </ul>
       </div>
@@ -194,10 +201,42 @@
       </div>
     </section>
 
-    <section class="contact" id="contact">
+    <section class="contact-container" id="contact">
       <h2 class="section-h2">Contact</h2>
-      <span>trena.holsten@gmail.com</span>
-      <button class="email-btn">Copy it 📋</button>
+
+      <div class="contact-form">
+        <form class="contact-form-inputs">
+          <p class="contact-text">
+            You can click my email to copy it<br />
+            <span class="email-span">📧 trena.holsten@gmail.com</span> <br />
+            or message me through this form!
+          </p>
+
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Your Email"
+            class="email-input"
+          />
+
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            class="message-textarea"
+          ></textarea>
+          <button>Send</button>
+        </form>
+
+        <div class="contact-form-img">
+          <img
+            src="/img/avatar-red-shy-smile.png"
+            alt="avatar red background"
+          />
+        </div>
+      </div>
     </section>
 
     <script src="script.js"></script>
