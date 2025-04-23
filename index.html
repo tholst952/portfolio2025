@@ -78,7 +78,12 @@
               cupiditate voluptatibus deleniti facere numquam, velit magnam
               consequatur.
             </p>
-            <a href="https://stardewvalleygiftguide.netlify.app/">Live</a>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://stardewvalleygiftguide.netlify.app/"
+              >Live</a
+            >
             <a href="#">Code</a>
           </div>
         </div>
@@ -181,38 +186,34 @@
       </div>
 
       <div class="education-container">
-        <h2>The past</h2>
-        <p class="education-text past-text">
-          Write about your past history with learning coding- where it started
-          and when it began in earnest. Include a part about the courses that
-          you have completed.
-        </p>
-        <h2>The present</h2>
-        <p class="education-text present-text">
-          Here you can write about courses you're currently working through and
-          what your aspirations are.
-        </p>
-        <h2>The future</h2>
-        <p class="education-text future-text">
-          Here you can write about the courses and skills you plan to obtain
-          next, and perhaps a line about how you will always be striving to
-          learn new skills.
-        </p>
+        <h2 class="section-h2">Education</h2>
+        <ul class="education-list">
+          <li>
+            <i class="checkmark fa-solid fa-check" style="color: #fff"></i>
+            The Ultimate React Course 2025: React, Redux & More - Udemy
+          </li>
+          <li>
+            <i class="checkmark fa-solid fa-check" style="color: #fff"></i>
+            The Complete JavaScript Course 2025: From Zero to Expert - Udemy
+          </li>
+          <li>
+            <i class="checkmark fa-solid fa-check" style="color: #fff"></i>
+            Build Responsive Real-World Websites with HTML and CSS - Udemy
+          </li>
+        </ul>
       </div>
     </section>
 
-    <section class="contact-container" id="contact">
+    <section class="contact" id="contact">
       <h2 class="section-h2">Contact</h2>
-
       <div class="contact-form">
         <form class="contact-form-inputs">
-          <p class="contact-text">
-            You can click my email to copy it<br />
-            <span class="email-span">📧 trena.holsten@gmail.com</span> <br />
-            or message me through this form!
-          </p>
+          <div class="contact-text">
+            <p>Click my email below to copy it</p>
+            <p class="email-copy">📧 trena.holsten@gmail.com</p>
+            <p>or message me through this form!</p>
+          </div>
 
-          <label for="email">Email</label>
           <input
             type="email"
             name="email"
@@ -221,13 +222,15 @@
             class="email-input"
           />
 
-          <label for="message">Message</label>
           <textarea
-            id="message"
             name="message"
+            id="message"
+            placeholder="Your Message"
             class="message-textarea"
           ></textarea>
-          <button>Send</button>
+          <button>
+            <span class="button-top">Send</span>
+          </button>
         </form>
 
         <div class="contact-form-img">
