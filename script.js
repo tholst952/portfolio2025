@@ -5,10 +5,14 @@ const topImg = document.querySelector(".home-img img");
 const navBtn = document.querySelector(".nav-btn");
 const navMenu = document.querySelector("nav");
 const navLinks = document.querySelectorAll(".nav-link");
-const emailCopy = document.querySelectorAll(".email-copy");
+const emailCopy = document.querySelector(".email-copy");
 const contactImgParent = document.querySelector(".contact-form-img");
 const contactImg = contactImgParent.querySelector("img");
 const contactForm = document.querySelector(".contact-form-inputs");
+
+///////////////////////////////////////////////////
+///// HOME SECTION /////
+//////////////////////////////////////////////////
 
 //Image hover effect
 btn.addEventListener("mouseenter", function () {
@@ -51,21 +55,28 @@ navLinks.forEach(function (link) {
   });
 });
 
-//Copy email to user's clipboard function
-// const copyToClipboard = function () {
-//   const copyText = "trena.holsten@gmail.com";
-
-//   // navigator.clipboard.writeText(copyText.value);
-//   alert("Copied email to clipboard!");
-// };
+///////////////////////////////////////////////////
+///// CONTACT SECTION /////
+//////////////////////////////////////////////////
 
 // copies email to user's clipboard
-// emailSpan.addEventListener("click", () => {
-//   const copyText = "trena.holsten@gmail.com";
-//   navigator.clipboard
-//     .writeText(copyText)
-//     .then(() => alert("Copied email to clipboard!"));
-// });
+emailCopy.addEventListener("click", () => {
+  const copyText = "trena.holsten@gmail.com";
+  navigator.clipboard
+    .writeText(copyText)
+    .then(() => {
+      contactImg.src = "/img/avatar-red.png";
+      console.log("Copied email to clipboard!");
+
+      // Set image back to default after 1 second
+      setTimeout(() => {
+        contactImg.src = "/img/avatar-red-shy-smile.png";
+      }, 1500);
+    })
+    .catch((err) => {
+      console.error("Failed to copy email", err);
+    });
+});
 
 // Change Image when mouse hovers over it
 contactImgParent.addEventListener("mouseover", function () {
