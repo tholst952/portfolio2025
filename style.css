@@ -86,8 +86,8 @@ header button {
 }
 
 section {
-  min-height: 100vh;
-  padding: 5rem 9% 5rem;
+  min-height: auto;
+  padding: 12rem 0;
 }
 
 .section-h2 {
@@ -97,6 +97,8 @@ section {
 }
 
 .home {
+  min-height: 100vh;
+  padding: 5rem 9% 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
