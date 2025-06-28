@@ -1,0 +1,111 @@
+/* ////////////////////////////////////////////////////////////////// */
+/* ****************** */
+/* MEDIA QUERY RULES */
+/* ****************** */
+
+/*******************************************/
+/* BELOW  1344px (smaller desktops)*/
+/*******************************************/
+@media (max-width: 1344px) {
+  .contact {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 544px) {
+  .home {
+    flex-direction: column;
+    margin: 5rem 4rem;
+    gap: 4rem;
+  }
+
+  .home-img,
+  .home-content {
+    width: 100%;
+    text-align: center;
+  }
+  .contact-links {
+    flex-direction: column;
+  }
+
+  .home .home-content h3 {
+    font-size: 2.5rem;
+  }
+
+  .home-content h1 {
+    font-size: 5rem;
+  }
+
+  .home-img img {
+    margin-top: 4rem;
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  nav {
+    position: absolute;
+    display: none;
+    text-align: center;
+    top: 0;
+    right: 0;
+    width: 100%;
+    border-bottom: 3px solid #b74b4b;
+    padding: 2rem 0;
+    background-color: #161616;
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+    /* z-index: 99; */
+  }
+
+  nav.active {
+    display: block;
+  }
+
+  nav a {
+    display: block;
+    font-size: 2.4rem;
+    margin: 3rem 0;
+    padding: 1rem;
+  }
+
+  nav a:hover,
+  nav a:active {
+    border-bottom: none;
+    transition: none;
+    background-color: none;
+  }
+
+  .nav-btn {
+    display: block;
+  }
+
+  .project-container .project {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skills-container h2 {
+    margin-bottom: 2rem;
+  }
+
+  .skills-container ul {
+    flex-direction: column;
+    list-style-type: none;
+    color: #4ba1b7;
+    line-height: 0.5;
+    gap: 1.6rem;
+    transition: 2s ease;
+  }
+
+  .education-list {
+    padding: 2rem;
+  }
+
+  .contact-form {
+    flex-direction: column;
+    width: 500px;
+    height: 1000px;
+  }
+}

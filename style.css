@@ -500,12 +500,45 @@ span {
 /* ****************** */
 /* MEDIA QUERY RULES */
 /* ****************** */
-@media (max-width: 1000px) {
+
+/*******************************************/
+/* BELOW  1200px (landscape tablets)*/
+/*******************************************/
+@media (max-width: 1200px) {
   .home {
     gap: 4rem;
   }
 }
 
+/*******************************************/
+/* BELOW  944px (tablets)*/
+/*******************************************/
+@media (max-width: 944px) {
+}
+
+/*******************************************/
+/* BELOW  704px (smaller tablets)*/
+/*******************************************/
+@media (max-width: 704px) {
+  .home {
+    flex-direction: column;
+    margin: 5rem 4rem;
+  }
+
+  .home-img,
+  .home-content {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/*******************************************/
+/* BELOW  544px (Phones)*/
+/*******************************************/
+@media (max-width: 544px) {
+}
+
+/* Original media query code */
 @media (max-width: 995px) {
   .home {
     flex-direction: column;
