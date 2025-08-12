@@ -26,9 +26,10 @@
       sizes="16x16"
       href="/favicon/favicon-16x16.png"
     />
-    <link rel="manifest" href="/site.webmanifest" />
-    <link rel="stylesheet" href="style.css" />
-    <!-- <link rel="stylesheet" href="queries.css" /> -->
+
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link rel="stylesheet" href="styles.css" />
+
     <title>Portfolio Website</title>
     <!-- <base target="_blank" rel="noopener noreferrer" /> -->
   </head>
@@ -36,7 +37,7 @@
     <header>
       <a href="#" class="logo">Trena Holsten</a>
 
-      <nav>
+      <nav class="hide">
         <a href="#about" class="nav-link">About</a>
         <a href="#projects" class="nav-link">Projects</a>
         <a href="#skills-education" class="nav-link"
@@ -45,36 +46,40 @@
         <a href="#contact" class="nav-link">Contact</a>
       </nav>
 
-      <button type="button" class="nav-btn hide">
+      <button type="button" class="nav-btn">
         <i class="fa-solid fa-bars"></i>
       </button>
     </header>
 
     <section class="home" id="about">
-      <div class="home-img">
-        <img
-          src="/img/avatar-11.png"
-          alt="/img/smiling girl icon"
-          onmouseover="this.src='/img/avatar-closed-eyes.png'"
-          onmouseout="this.src='/img/avatar-11.png'"
-        />
-      </div>
-      <div class="home-content">
-        <h1>Hi, I'm <span>Trena</span></h1>
-        <h3 class="typing-text">I'm a <span></span></h3>
-        <p>
-          Looking for a place on a team where I can help produce responsive
-          websites and applications for desktop and mobile.
-        </p>
-        <div class="contact-links">
-          <a href="#contact" class="btn email-btn">Contact me</a>
-          <div class="social-links">
-            <a class="social-icon" href="www.linkedin.com/in/trena-holsten"
-              ><i class="fa-brands fa-linkedin"></i
-            ></a>
-            <a class="social-icon" href="https://github.com/tholst952"
-              ><i class="fa-brands fa-github"></i
-            ></a>
+      <div class="home-inner">
+        <div class="home-img">
+          <img
+            src="/img/avatar-11.png"
+            alt="/img/smiling girl icon"
+            onmouseover="this.src='/img/avatar-closed-eyes.png'"
+            onmouseout="this.src='/img/avatar-11.png'"
+          />
+        </div>
+
+        <div class="home-content">
+          <h1>Hi, I'm <span>Trena</span></h1>
+          <h3 class="typing-text">I'm a <span></span></h3>
+          <p class="home-introduction">
+            Looking for a place on a team where I can help produce responsive
+            websites and applications for desktop and mobile.
+          </p>
+
+          <div class="contact-links">
+            <a href="#contact" class="btn email-btn">Contact me</a>
+            <div class="social-links">
+              <a class="social-icon" href="www.linkedin.com/in/trena-holsten"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a class="social-icon" href="https://github.com/tholst952"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
           </div>
         </div>
       </div>
@@ -86,92 +91,68 @@
         <div class="project">
           <img src="/img/stardew.png" />
           <div class="project-text">
-            <h2>Stardew Valley Gift Guide</h2>
+            <h2 class="project-title">Stardew Valley Gift Guide</h2>
             <p>
-              I love the video game Stardew Valley. This is a single-page web
-              app that I built to practice React. There is a menu of selectable
-              profiles on the left that will display each character's gift
-              preferences on the right.
+              This is a single-page web app that I built to practice React.
+              There is a menu of selectable profiles on the left that will
+              display each character's gift preferences on the right.
             </p>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://stardewvalleygiftguide.netlify.app/"
-              >Live</a
-            >
-            <a href="#">Code</a>
+            <div class="project-links">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://stardewvalleygiftguide.netlify.app/"
+                >Live</a
+              >
+              <a href="#">Code</a>
+            </div>
           </div>
         </div>
-        <div class="project">
-          <img src="/img/ugly-chairs-site.png" />
-          <div class="project-text">
-            <h2>Ugly Chairs</h2>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-              distinctio aspernatur assumenda quas error, ex pariatur possimus,
-              voluptatibus facilis, beatae qui ipsam veniam est eos!
-            </p>
-            <a href="https://ugly-chairs.netlify.app/">Live</a>
-            <a href="#">Code</a>
-          </div>
-        </div>
-
         <div class="project">
           <img src="/img/bankist.png" />
           <div class="project-text">
-            <h2>Bankist</h2>
+            <h2 class="project-title">Ugly Chairs</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
-              dicta nisi iure illo hic omnis, necessitatibus maxime sint porro,
-              eos ipsum quidem quia blanditiis aliquam.
+              This pretend company sells beautiful ugly chairs. Responsive
+              design queries for several screen widths. Placeholder image for
+              ugly chairs.
             </p>
-            <a href="#">Live</a>
-            <a href="#">Code</a>
+            <div class="project-links">
+              <a href="https://ugly-chairs.netlify.app/">Live</a>
+              <a href="#">Code</a>
+            </div>
           </div>
         </div>
-
         <div class="project">
           <img src="/img/booksforbrains.png" />
           <div class="project-text">
-            <h2>Books For Brains</h2>
+            <h2 class="project-title">Books For Brains</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. A sunt
               repellendus enim sint? Natus et tempore asperiores cumque
               laudantium culpa labore quaerat eligendi ipsam voluptatem!
             </p>
-            <a href="#">Live</a>
-            <a href="#">Code</a>
+            <div class="project-links">
+              <a href="#">Live</a>
+              <a href="#">Code</a>
+            </div>
           </div>
         </div>
-
-        <div class="project">
-          <img src="/img/guessmynumber.png" />
-          <div class="project-text">
-            <h2>Guess My Number Game</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
-              ipsam numquam itaque optio fugit provident fugiat, accusamus
-              debitis. Ratione nihil praesentium repudiandae, aliquid tempora
-              nemo!
-            </p>
-            <a href="#">Live</a>
-            <a href="#">Code</a>
-          </div>
-        </div>
-
         <div class="project">
           <img src="/img/omnifood.png" />
           <div class="project-text">
-            <h2>Omnifood</h2>
+            <h2 class="project-title">Omnifood</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
               minima porro, dolorem illo veniam laudantium ex, excepturi,
               expedita earum quos nulla officiis architecto possimus ea?
             </p>
-            <a href="https://omnifood-trena.netlify.app/" target="_blank"
-              >Live</a
-            >
-            <a href="#">Code</a>
+            <div class="project-links">
+              <a href="https://omnifood-trena.netlify.app/" target="_blank"
+                >Live</a
+              >
+              <a href="#">Code</a>
+            </div>
           </div>
         </div>
       </div>
