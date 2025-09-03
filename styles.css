@@ -154,10 +154,10 @@ nav a:active {
 }
 
 /* REMOVE THIS TEMPORARY RULE */
-.home-img,
+/* .home-img,
 .home-content {
   border: 2px solid red;
-}
+} */
 
 .home-content {
   width: 90%;
@@ -552,14 +552,14 @@ span {
 @media (min-width: 704px) {
   /* md styles */
   body {
-    background-color: orange;
+    background-color: rgb(70, 66, 66);
   }
 }
 
 @media (min-width: 944px) {
   /* lg styles */
   body {
-    background-color: yellow;
+    background-color: rgb(45, 73, 52);
   }
 
   .nav-btn {
@@ -606,13 +606,14 @@ span {
   }
 
   .home {
-    padding: 6rem 2rem;
+    padding: 9rem 3rem 6rem 3rem;
   }
 
   .home-inner {
     flex-direction: row;
     align-items: center;
-    /* justify-content: space-between; */
+    padding: 3rem;
+    gap: 2rem;
   }
 
   .home-img,
@@ -631,12 +632,71 @@ span {
     align-items: flex-start;
     text-align: left;
   }
+
+  .project-container .section-h2 {
+    margin-bottom: 6rem;
+  }
+
+  .project {
+    flex-direction: row;
+    gap: 6rem;
+  }
+
+  .project-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .project-text h2 {
+    font-size: 2.6rem;
+    align-self: flex-start;
+  }
+
+  .project-text p {
+    font-size: 2rem;
+  }
+
+  .project-links {
+    align-self: flex-start;
+    gap: 0.5rem;
+  }
+
+  .skills-container h2 {
+    margin-bottom: 0;
+  }
+
+  .skills-container ul li {
+    padding: 0;
+  }
+
+  .education-container {
+    width: 100%;
+  }
+
+  .education-inner {
+    display: flex;
+    justify-content: center;
+  }
+
+  .education-list {
+    background: rgba(29, 20, 20, 0.699);
+    margin: 0;
+    padding: 0;
+    text-align: left;
+  }
+
+  .education-list li {
+    display: block;
+    margin: 0.5rem 0;
+    padding: 1.5rem;
+  }
 }
 
 @media (min-width: 1200px) {
   /* xl styles */
   body {
-    background-color: green;
+    background-color: rgb(44, 64, 78);
   }
 
   .home-content h1 {
@@ -651,6 +711,6 @@ span {
 @media (min-width: 1344px) {
   /* xxl styles */
   body {
-    background-color: blue;
+    background-color: rgb(77, 51, 94);
   }
 }
