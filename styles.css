@@ -32,9 +32,9 @@ body {
 }
 
 /* LAYOUT & UTILITY */
-section {
+/* section .home .projects .skills-education {
   padding: 4rem 0;
-}
+} */
 
 .section-h2 {
   font-size: 3.2rem;
@@ -59,7 +59,7 @@ header {
 }
 
 .logo {
-  font-size: 2rem;
+  font-size: 2.2rem;
   color: var(--accent-color);
   font-weight: 800;
   transition: 0.5s ease;
@@ -249,7 +249,7 @@ span {
 }
 
 .home-content p {
-  font-size: 2rem;
+  font-size: 2.2rem;
   text-align: center;
 }
 
@@ -309,6 +309,7 @@ span {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 4rem 0;
 }
 
 .project {
@@ -317,7 +318,7 @@ span {
   align-items: center;
   flex-direction: column;
   gap: 2rem;
-  margin-bottom: 4.2rem;
+  margin-bottom: 6rem;
   padding: 0 4rem;
 }
 
@@ -328,18 +329,22 @@ span {
 }
 
 .project-text {
-  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
 }
 
 .project h2 {
-  font-size: 2rem;
+  font-size: 2.4rem;
   text-align: center;
   color: var(--accent-color);
 }
 
-.project p {
-  font-size: 1.6rem;
-  margin-bottom: 2rem;
+.project-description {
+  width: 40rem;
+  font-size: 2.2rem;
 }
 
 .project-links {
@@ -377,6 +382,7 @@ span {
   align-items: center;
   font-size: 3rem;
   line-height: 2;
+  padding: 4rem 0;
 }
 
 .skills-container {
@@ -388,7 +394,7 @@ span {
   display: flex;
   flex-direction: column;
   color: var(--accent-color);
-  font-size: 2.2rem;
+  font-size: 2.4rem;
 }
 
 .skills-container ul li i {
@@ -397,7 +403,7 @@ span {
 
 /* Education (Same Section) */
 .education-container {
-  font-size: 2.2rem;
+  font-size: 2.4rem;
   line-height: 1.4;
   padding: 1rem 2.4rem;
 }
@@ -428,20 +434,24 @@ span {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 4rem;
+  /* gap: 4rem; */
 }
 
 .contact-form {
   background-color: var(--darker-red);
   display: flex;
   flex-direction: column;
-  gap: 8rem;
+  /* gap: 4rem; */
   border-radius: 8px;
-  margin-top: 3rem;
+  padding: 4rem;
+
+  margin-bottom: 4rem;
 }
 
 .contact-text {
   font-size: 2rem;
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
   margin-bottom: 1.8rem;
 }
 
@@ -452,7 +462,7 @@ span {
   border-radius: 8px;
   font-size: 2rem;
   font-weight: 600;
-  padding: 0.5rem;
+  padding: 0.5rem 0;
   margin: 0.5rem 0;
 }
 
@@ -467,8 +477,8 @@ span {
   display: flex;
   flex-direction: column;
   height: 100%;
-  margin-top: 1rem;
-  margin-left: 4rem;
+  /* margin-top: 1rem;
+  margin-left: 4rem; */
 }
 
 .contact-form-inputs label {
@@ -524,8 +534,8 @@ span {
   height: 500px;
   width: auto;
   display: block;
-  border-top-right-radius: 8px;
-  border-bottom-right-radius: 8px;
+  /* border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px; */
 }
 
 /* MEDIA QUERIES */
