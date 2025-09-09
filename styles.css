@@ -101,10 +101,9 @@ nav.active {
 
 nav a {
   display: block;
-  /* font-size: 2.4rem; */
-  font-size: 4rem;
+  font-size: 2.4rem;
   color: var(--white);
-  margin: 3rem 0;
+  margin: 2rem 0;
   padding: 1rem;
   text-decoration: none;
   border: none;
@@ -477,6 +476,7 @@ span {
   display: flex;
   flex-direction: column;
   height: 100%;
+  padding: 1.8rem;
 }
 
 .contact-form-inputs label {
@@ -573,28 +573,49 @@ span {
   }
 
   nav {
-    display: flex;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 90%;
+    max-width: 28rem;
+
+    background-color: var(--primary-alt-color);
+    border-radius: 8px;
+
+    padding: 2rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    /* display: flex;
     gap: 2.4rem;
     width: auto;
     height: auto;
     z-index: auto;
     border: none;
-    background-color: transparent;
-
-    position: static;
+    background-color: transparent; */
   }
 
-  nav.hide {
+  nav.active {
     display: flex;
   }
 
+  /* nav.hide {
+    display: flex;
+  } */
+
   nav a {
-    display: inline-block;
-    font-size: 2rem;
     color: var(--white);
-    margin: 0;
-    font-weight: 500;
-    transition: 0.3s ease;
+    display: block;
+    font-size: 2.4rem;
+    margin: 1rem 0;
   }
 
   .home {
