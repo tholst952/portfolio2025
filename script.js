@@ -82,89 +82,91 @@ emailCopy.addEventListener("click", () => {
 // Handle the contact image hover effects for wide screens and static for mobile
 // immediately evoked function below
 /************************************************* */
-// (function () {
-//   // Image paths
-//   const imagePaths = {
-//     default: "/img/avatar-red-shy-smile.png",
-//     parentHover: "/img/avatar-red/closed-shy.png",
-//     formHover: "/img/avatar-red-eyes-left-shy.png",
-//   };
+(function () {
+  // Image paths
+  const imagePaths = {
+    default: "/img/avatar-red-shy-smile.png",
+    parentHover: "/img/avatar-red/closed-shy.png",
+    formHover: "/img/avatar-red-eyes-left-shy.png",
+  };
 
-//   // Media query for min-width: 704px
-//   const mediaQuery = window.matchMedia("(min-width: 704px)");
+  // Media query for min-width: 704px
+  const mediaQuery = window.matchMedia("(min-width: 704px)");
 
-//   // Check if hover effects should be enabled
-//   function shouldEnableHoverEffects() {
-//     return mediaQuery.matches;
-//   }
+  // Check if hover effects should be enabled
+  function shouldEnableHoverEffects() {
+    return mediaQuery.matches;
+  }
 
-//   // Image change handler
-//   function changeImage(imagePath) {
-//     if (shouldEnableHoverEffects()) {
-//       contactImg.src = imagePath;
-//     }
-//   }
+  // Image change handler
+  function changeImage(imagePath) {
+    if (shouldEnableHoverEffects()) {
+      contactImg.src = imagePath;
+    }
+  }
 
-//   // Event handlers
-//   function handleParentMouseOver() {
-//     changeImage(imagePaths.parentHover);
-//   }
+  // Event handlers
+  function handleParentMouseOver() {
+    changeImage(imagePaths.parentHover);
+  }
 
-//   function handleParentMouseLeave() {
-//     changeImage(imagePaths.default);
-//   }
+  function handleParentMouseLeave() {
+    changeImage(imagePaths.default);
+  }
 
-//   function handleFormMouseEnter() {
-//     changeImage(imagePaths.formHover);
-//   }
+  function handleFormMouseEnter() {
+    changeImage(imagePaths.formHover);
+  }
 
-//   function handleFormMouseLeave() {
-//     changeImage(imagePaths.default);
-//   }
+  function handleFormMouseLeave() {
+    changeImage(imagePaths.default);
+  }
 
-//   // Add Event Listeners
-//   function addEventListeners() {
-//     contactImgParent.addEventListener("mouseover", handleParentMouseOver);
-//     contactImgParent.addEventListener("mouseleave", handleParentMouseLeave);
-//     contactForm.addEventListener("mouseenter", handleParentMouseEnter);
-//     contactForm.addEventListener("mouseleave", handleParentMouseLeave);
-//   }
+  // Add Event Listeners
+  function addEventListeners() {
+    contactImgParent.addEventListener("mouseover", handleParentMouseOver);
+    contactImgParent.addEventListener("mouseleave", handleParentMouseLeave);
+    contactForm.addEventListener("mouseenter", handleFormMouseEnter);
+    contactForm.addEventListener("mouseleave", handleFormMouseLeave);
+  }
 
-//   // Initialize Hover Effects
-//   function initHoverEffects() {
-//     addEventListeners();
-//   }
+  // Initialize Hover Effects
+  function initHoverEffects() {
+    addEventListeners();
+  }
 
-//   // Listen for media query changes to handle dynamic resizing
-//   mediaQuery.addEventListener("change", function (e) {
-//     if (!e.matches) {
-//       // Reset to default image when below 704px
-//       contactImg.src = imagePaths.default;
-//     }
-//   });
+  // Listen for media query changes to handle dynamic resizing
+  mediaQuery.addEventListener("change", function (e) {
+    if (!e.matches) {
+      // Reset to default image when below 704px
+      contactImg.src = imagePaths.default;
+    }
+  });
 
-//   // Initialize when DOM is ready
-//   if (document.readyState === "loading") {
-//     document.addEventListener("DOMContentLoaded", initHoverEffects);
-//   } else {
-//     initHoverEffects();
-//   }
-// });
+  // Initialize when DOM is ready
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initHoverEffects);
+  } else {
+    initHoverEffects();
+  }
+});
 
+/*
 // Change Image when mouse hovers over it
-// contactImgParent.addEventListener("mouseover", function () {
-//   contactImg.src = "/img/avatar-red-closed-shy.png";
-// });
+contactImgParent.addEventListener("mouseover", function () {
+  contactImg.src = "/img/avatar-red-closed-shy.png";
+});
 
-// contactImgParent.addEventListener("mouseleave", function () {
-//   contactImg.src = "/img/avatar-red-shy-smile.png";
-// });
+contactImgParent.addEventListener("mouseleave", function () {
+  contactImg.src = "/img/avatar-red-shy-smile.png";
+});
 
-// // Change the image when mouse hovers inside the contact form
-// contactForm.addEventListener("mouseenter", function () {
-//   contactImg.src = "/img/avatar-red-eyes-left-shy.png";
-// });
+// Change the image when mouse hovers inside the contact form
+contactForm.addEventListener("mouseenter", function () {
+  contactImg.src = "/img/avatar-red-eyes-left-shy.png";
+});
 
-// contactForm.addEventListener("mouseleave", function () {
-//   contactImg.src = "/img/avatar-red-shy-smile.png";
-// });
+contactForm.addEventListener("mouseleave", function () {
+  contactImg.src = "/img/avatar-red-shy-smile.png";
+});
+*/
