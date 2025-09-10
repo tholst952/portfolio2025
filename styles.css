@@ -81,29 +81,29 @@ header {
 
 nav {
   position: fixed;
-  display: none;
-  text-align: center;
   top: 0;
   right: 0;
   width: 100vw;
   height: 100vh;
-  /* border-bottom: 3px solid var(--accent-color); */
   padding: 2rem 0;
   background-color: var(--primary-alt-color);
-  border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
   z-index: 99;
-  overflow-x: hidden;
+
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
 }
 
 nav.active {
-  display: block;
+  display: flex;
 }
 
 nav a {
-  display: block;
   font-size: 2.4rem;
   color: var(--white);
-  margin: 2rem 0;
+
   padding: 1rem;
   text-decoration: none;
   border: none;
@@ -446,7 +446,6 @@ span {
   display: flex;
   flex-direction: column;
   border-radius: 8px;
-  padding: 1rem;
   margin-bottom: 4rem;
 }
 
@@ -539,12 +538,23 @@ span {
 /********************************************/
 @media (min-width: 544px) {
   /* sm styles */
+  .home {
+    padding-top: 6rem;
+  }
 }
 
 @media (min-width: 704px) {
   /* md styles */
   body {
     background-color: rgb(238, 185, 10);
+  }
+
+  .section-h2 {
+    font-size: 2.8rem;
+  }
+
+  .logo {
+    font-size: 2.8rem;
   }
 }
 
@@ -556,6 +566,17 @@ span {
 
   .nav-btn {
     display: none;
+  }
+
+  nav {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    gap: 2.4rem;
+    width: auto;
+    height: auto;
+    padding: 0;
+    background: transparent;
   }
 
   header {
@@ -572,50 +593,13 @@ span {
     align-items: center;
   }
 
-  nav {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    width: 90%;
-    max-width: 28rem;
-
-    background-color: var(--primary-alt-color);
-    border-radius: 8px;
-
-    padding: 2rem;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    text-align: center;
-
-    /* display: flex;
-    gap: 2.4rem;
-    width: auto;
-    height: auto;
-    z-index: auto;
-    border: none;
-    background-color: transparent; */
-  }
-
   nav.active {
     display: flex;
   }
 
-  /* nav.hide {
-    display: flex;
-  } */
-
   nav a {
     color: var(--white);
-    display: block;
     font-size: 2.4rem;
-    margin: 1rem 0;
   }
 
   .home {
