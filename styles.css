@@ -438,7 +438,9 @@ span {
   flex-direction: column;
   border-radius: 8px;
   margin-bottom: 4rem;
-  padding: 1.4rem;
+  padding: 2rem;
+  width: 100%;
+  max-width: 46rem;
 }
 
 .contact-text {
@@ -464,11 +466,9 @@ span {
 }
 
 .contact-form-inputs {
-  min-width: 240px;
   display: flex;
   flex-direction: column;
   height: 100%;
-  padding: 1.8rem;
 }
 
 .contact-form-inputs label {
@@ -479,6 +479,7 @@ span {
 .message-textarea {
   padding: 0.75rem;
   font-size: 1.6rem;
+  border: 0 none;
   border-radius: 8px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
@@ -614,7 +615,7 @@ span {
   }
 
   .contact-form {
-    padding: 2.4rem;
+    padding: 3rem;
   }
 
   .contact-text {
@@ -642,12 +643,13 @@ span {
 
 /********************************************/
 /********************************************/
-@media (min-width: 780px) {
+@media (min-width: 945px) {
   /* lg styles */
   body {
     background-color: rgb(95, 150, 51);
   }
 
+  /* Nav and Home Section */
   header {
     position: sticky;
     top: 0;
@@ -722,6 +724,7 @@ span {
     box-shadow: 0 0 25px #b74b4b;
   }
 
+  /* Projects Section */
   .project-container .section-h2 {
     margin-bottom: 6rem;
   }
@@ -729,11 +732,18 @@ span {
   .project {
     flex-direction: row;
     gap: 6rem;
+    padding: 0;
+    max-width: 90rem;
+  }
+
+  .project-img {
+    flex: 0 0 50%;
   }
 
   .project-text {
     display: flex;
     flex-direction: column;
+    flex: 0 0 50%;
     gap: 1.5rem;
   }
 
@@ -748,9 +758,10 @@ span {
 
   .project-links {
     align-self: flex-start;
-    gap: 0.5rem;
+    gap: 1.6rem;
   }
 
+  /* Skills and Education Section */
   .skills-container {
     display: flex;
     flex-direction: row;
@@ -786,34 +797,7 @@ span {
     margin: 0.5rem 0;
     padding: 1.5rem;
   }
-
-  .contact-form {
-    flex-direction: row;
-  }
 }
 
 /********************************************/
 /********************************************/
-@media (min-width: 1200px) {
-  /* xl styles */
-  body {
-    background-color: rgb(37, 108, 158);
-  }
-
-  .home-content h1 {
-    font-size: 6rem;
-  }
-
-  .home-content p {
-    font-size: 3rem;
-  }
-}
-
-/********************************************/
-/********************************************/
-@media (min-width: 1344px) {
-  /* xxl styles */
-  body {
-    background-color: rgb(83, 38, 104);
-  }
-}
