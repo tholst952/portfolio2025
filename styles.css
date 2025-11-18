@@ -645,9 +645,6 @@ span {
 /********************************************/
 @media (min-width: 945px) {
   /* lg styles */
-  body {
-    /* background-color: rgb(95, 150, 51); */
-  }
 
   /* Nav and Home Section */
   header {
